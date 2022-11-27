@@ -1,0 +1,60 @@
+<style>
+    body {margin: 0; display: flex; justify-content: center; align-items: center; background-color: black; font-family: sans-serif;}
+</style>
+
+<title>Space Game</title>
+<link rel="shortcut icon" type="image/jpg" href="./img/invader.png"/>
+
+<div style="position: relative;" id="parentDiv">
+    <p id="ScoreContainer" style="position: absolute; color: white; left: 10px; top: 10px; margin: 0; display: none;">
+        <span>Score:</span>
+        <span id="score">0</span>
+    </p>
+<canvas></canvas>
+<!--Backgorund-->
+<div id="StartScreen" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 20;
+ background: url('./img/startScreenBackground.png'); background-size: contain;
+  background-repeat: no-repeat; display: flex; justify-content: center; align-items: center;">
+
+<div style="text-align: center;">
+
+    <h1 style="color:#fff;">Space Invaders</h1>
+<!--Button-->
+<div id="StartButton" style="cursor: pointer; position: relative; display: inline-block;">
+<img src="./img/button.png" alt="Start Button">
+<span style="position: absolute; color: #fff; top: 50%; transform: translate(-50%, -50%); left: 50%;">Start</span>
+</div>
+</div>
+
+
+</div>
+
+<!--Restart-->
+<!--Backgorund-->
+<div id="RestartScreen" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 20;
+ background: url('./img/startScreenBackground.png'); background-size: contain;
+  background-repeat: no-repeat; display: none; justify-content: center; align-items: center;">
+
+<div style="text-align: center;">
+
+    <h1 style="color:#fff; font-size: 24px;">Game Over</h1>
+    <h1 id="finalScore" style="color: #fff; margin: 0; font-size: 48px;">300</h1>
+    <p style="color: #fff; margin-top: 0;">Points</p>
+<!--Button-->
+<div id="RestartButton" style="cursor: pointer; position: relative; display: inline-block;">
+<img src="./img/button.png" alt="Restart Button">
+<span style="position: absolute; color: #fff; top: 50%; transform: translate(-50%, -50%); left: 50%;">Restart</span>
+</div>
+</div>
+
+
+
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" 
+integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+ crossorigin="anonymous" 
+ referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./audio.js"></script>
+<script src="./index.js"></script>
